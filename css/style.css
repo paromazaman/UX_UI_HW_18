@@ -30,7 +30,7 @@ ul {
 }
 
 footer {
-    background-color: lightgreen;
+    background-color: greenyellow;
     padding: 20px;
     text-align: center;
 }
@@ -45,4 +45,24 @@ footer ul li {
 
 body{
     background-color: lightblue;
+}
+
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexChild{
+    width: 33%;
+    margin: auto;
+    padding: 20px;
+}
+
+.workItem{
+    grid-area: myArea;
+}
+
+.workGrid{
+    display: grid;
+    grid-template-areas: "myArea myArea myArea";
 }
