@@ -58,11 +58,31 @@ body{
     padding: 20px;
 }
 
-.workItem{
-    grid-area: myArea;
+.workItem1{
+    grid-area: workItem1;
 }
-
+.workItem2{
+    grid-area: workItem2;
+}
+.workItem3{
+    grid-area: workItem3;
+}
 .workGrid{
     display: grid;
-    grid-template-areas: "myArea myArea myArea";
+    grid-template-areas: "workItem1 workItem2 workItem3";
+}
+
+@media only screen and (max-width:600){
+    .flexContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+    .workGrid{
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "workItem1"
+        "workItem2"
+        "workItem3";
+    }
 }
